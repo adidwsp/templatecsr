@@ -84,12 +84,12 @@ const dialog = ref(false);
 const form = reactive({
   title: "CERITA",
   subtitle: "INCOE BERBAGI ILMU",
-  smallImage: "https://placehold.co/150",
-  largeImage: "https://placehold.co/600x200",
+  smallImage: "src/assets/incoe.png",
+  largeImage: "https://placehold.co/179x53",
   caption: "Doc. Kunjungan CSR SDN Parungmulya Kelas Jauh.",
   firstParagraph: `Sebagai wujud komitmen terhadap pembangunan berkelanjutan, PT Century Batteries Indonesia secara konsisten menjalankan program Corporate Social Responsibility (CSR) di bidang pendidikan, yang bertujuan untuk meningkatkan kualitas sumber daya manusia sejak usia dini hingga jenjang pendidikan tinggi.`,  
-  colImage1: "https://placehold.co/300x200",
-  colImage2: "https://placehold.co/300x200",
+  colImage1: "https://placehold.co/241x173",
+  colImage2: "https://placehold.co/241x173",
   columnText: `Program Incoe Berbagi Ilmu ini mulai dijalankan pada tanggal 30 April 2025 di SD binaan PT Century Batteries Indonesia, yaitu SDN Parungmulya Kelas Jauh.\n\nPada kesempatan kali ini PIC CSR PT Century Batteries Indonesia memberikan edukasi mengenai Keselamatan dan Keamanan di sekolah. Kegiatan ini diikuti oleh 56 orang penerima manfaat, yang terdiri dari 40 orang siswa, dan 16 orang guru dengan harapan dapat meningkatkan kesadaran serta kesiapsiagaan terhadap potensi risiko di sekolah.`,
   footer: "#02 CSR INCOE DALAM BERITA"
 });
@@ -150,25 +150,30 @@ const exportToPDF = async () => {
 }
 
 .title {
-  font-size: 64px;
+  font-size: 86.2px;
   font-weight: bold;
   color: black;
-  font-family: 'Lucida Sans', sans-serif;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .subtitle {
-  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
   margin-bottom: 20px;
   color: black;
   font-weight: normal;
 }
 
 .image-large {
-  width: 100%;
+  width: 179mm;
+  height: 53mm;
 }
 
 .image-small {
-  width: 25%;
+  width: 46mm;
+  height: 46mm;
 }
 
 .caption {
@@ -194,7 +199,8 @@ const exportToPDF = async () => {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 40%;
+  width: 64mm;
+  height: 44mm;
   margin-top: 20px;
 }
 
