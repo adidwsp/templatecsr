@@ -53,12 +53,34 @@
           <v-form>
             <v-text-field v-model="form.title" label="Title" />
             <v-text-field v-model="form.subtitle" label="Subtitle" />
-            <v-text-field v-model="form.smallImage" label="Small Image URL" />
-            <v-text-field v-model="form.largeImage" label="Large Image URL" />
+            <!-- <v-text-field v-model="form.smallImage" label="Small Image URL" /> -->
+            <!-- <v-text-field v-model="form.largeImage" label="Large Image URL" /> -->
+            <v-file-input
+              v-model="form.largeImage"
+              label="Upload Large Image"
+              accept="image/*"
+              show-size
+              prepend-icon="mdi-image"
+            />
             <v-text-field v-model="form.caption" label="Caption" />
             <v-textarea v-model="form.firstParagraph" label="First Paragraph" rows="3" />
-            <v-text-field v-model="form.colImage1" label="Column Image 1 URL" />
-            <v-text-field v-model="form.colImage2" label="Column Image 2 URL" />
+            <!-- <v-text-field v-model="form.colImage1" label="Column Image 1 URL" />
+            <v-text-field v-model="form.colImage2" label="Column Image 2 URL" /> -->
+            <v-file-input
+              v-model="form.colImage1"
+              label="Upload Column Image 1"
+              accept="image/*"
+              show-size
+              prepend-icon="mdi-image"
+            />
+            
+            <v-file-input
+              v-model="form.colImage2"
+              label="Upload Column Image 2"
+              accept="image/*"
+              show-size
+              prepend-icon="mdi-image"
+            />
             <v-textarea v-model="form.columnText" label="Column Text" rows="4" />
             <v-text-field v-model="form.footer" label="Footer Text" />
           </v-form>
