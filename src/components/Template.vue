@@ -84,7 +84,7 @@ const dialog = ref(false);
 const form = reactive({
   title: "CERITA",
   subtitle: "INCOE BERBAGI ILMU",
-  smallImage: "src/assets/incoe.png",
+  smallImage: "https://lh3.googleusercontent.com/pw/AP1GczPF0nbwZmBF-Yyqt7_71j4D-GHq2mheTokgcvhlMOITY3cJhvAPRs-YIZYQWZHNvvlW5SwE2jgCuX_ZidZOHe3_iSPOqDdJ1wcLjOkXamnPhkcPU3p6Wl_e780kl6HsDb1Yj37hp72XGegfjVJciJC10w=w500-h500-s-no-gm?authuser=0",
   largeImage: "https://placehold.co/179x53",
   caption: "Doc. Kunjungan CSR SDN Parungmulya Kelas Jauh.",
   firstParagraph: `Sebagai wujud komitmen terhadap pembangunan berkelanjutan, PT Century Batteries Indonesia secara konsisten menjalankan program Corporate Social Responsibility (CSR) di bidang pendidikan, yang bertujuan untuk meningkatkan kualitas sumber daya manusia sejak usia dini hingga jenjang pendidikan tinggi.`,  
