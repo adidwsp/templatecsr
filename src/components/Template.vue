@@ -18,8 +18,8 @@
         
         <div class="text-section">
           <div class="image-col">
-              <img :src="form.colImage1" alt="image" />
-              <img :src="form.colImage2" alt="image" />
+              <img :src="form.colImage1" class="image-col1" alt="image" />
+              <img :src="form.colImage2" class="image-col2" alt="image" />
           </div>
           <p class="column">
             {{ form.columnText }}
@@ -169,11 +169,14 @@ const exportToPDF = async () => {
 .image-large {
   width: 179mm;
   height: 53mm;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .image-small {
   width: 46mm;
   height: 46mm;
+  object-fit: cover;
 }
 
 .caption {
@@ -187,6 +190,7 @@ const exportToPDF = async () => {
   font-size: 18px;
   text-align: justify;
   color: black;
+  white-space: pre-wrap;
 }
 
 .text-section {
@@ -199,9 +203,20 @@ const exportToPDF = async () => {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin-top: 5px;
+}
+
+.image-col1 {
   width: 64mm;
   height: 44mm;
-  margin-top: 20px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.image-col2 {
+  width: 64mm;
+  height: 46mm;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .footer {
